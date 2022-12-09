@@ -27,13 +27,15 @@ public class PriceCalculatorShould {
     }
 
     @Test
-    public void total_is_the_sum_of_prices() {
+    public void apply_discount_to_prices() {
 
         PriceCalculator priceCalculator = new PriceCalculator();
 
-        priceCalculator.addPrice(10.2);
-        priceCalculator.addPrice(15.5);
+        priceCalculator.addPrice(12.5);
+        priceCalculator.addPrice(17.5);
 
-        assertThat(priceCalculator.getTotal(), is(25.7));
+        priceCalculator.setDiscount(50);
+
+        assertThat(priceCalculator.getTotal(), is(15.0));
     }
 }

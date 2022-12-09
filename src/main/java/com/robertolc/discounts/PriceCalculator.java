@@ -5,6 +5,7 @@ import java.util.List;
 
 public class PriceCalculator {
     private List<Double> prices = new ArrayList<>();
+    private double discount = 0;
 
     public double getTotal() {
 
@@ -12,10 +13,14 @@ public class PriceCalculator {
         for (Double price : prices) {
             result += price;
         }
-        return result;
+        return result * ((100 - discount) / 100);
     }
 
     public void addPrice(double price) {
         prices.add(price);
+    }
+
+    public void setDiscount(double discount) {
+        this.discount = discount;
     }
 }
