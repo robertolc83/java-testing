@@ -6,8 +6,14 @@ public class PasswordUtil {
         WEAK,MEDIUM,STRONG
     }
 
+    /**
+     * Descripción: Método que sirve para validar si un password es debil, medio o fuerte
+     * @param password
+     * @return
+     */
     public static SecurityLevel assessPassword(String password){
 
+        //Si el password tiene menos de 8 digitos es debil
         if (password.length() < 8){
             return SecurityLevel.WEAK;
         }

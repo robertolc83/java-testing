@@ -3,6 +3,10 @@ package com.robertolc.discounts;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Descripción: Clase que calcula el total de precios que se van agregando a una lista
+ * y aplica descuentos en porcentaje en caso de tener.
+ */
 public class PriceCalculator {
     private List<Double> prices = new ArrayList<>();
     private double discount = 0;

@@ -6,7 +6,7 @@ import java.util.Collection;
 
 /**
  * MovieRepository es una interface ya que para el ejemplo no es necesario
- * implementarla y solo la vamos a cokear con mockito para hacer la simulacion
+ * implementarla y solo la vamos a mockear con mockito para hacer la simulacion
  * de sus metodos para buscar peliculas
  */
 public interface MovieRepository {
